@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'NiaCARE — Dental System',
+  title: 'NiaCARE|Dental System',
   description: 'NiaCARE dental facility operations system',
 }
 
