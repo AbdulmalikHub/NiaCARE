@@ -1,0 +1,8 @@
+'use client'
+
+import { useMemo, useState } from 'react'
+import Image from 'next/image'
+import { appointments, billing, formatRole, getInitials, metrics, navItems, pageTitle, patients, reports, roleLabels, storeUser, type NiaRole, type NiaUser } from '../../lib/nia/data'
+import { StatusBadge } from './status-badge'
+
+export function BillingPage() { return <div className="page-content"><div className="page-heading"><div><p className="eyebrow">FINANCE</p><h1>Billing</h1><p className="muted">Invoices, collections, and facility revenue.</p></div><button className="primary-button">+ Create invoice</button></div><div className="metric-grid billing-metrics"><div className="metric-card"><div className="metric-icon">◈</div><div><p>Outstanding</p><strong>KES 126K</strong><small>18 invoices</small></div></div><div className="metric-card"><div className="metric-icon">✓</div><div><p>Collected this month</p><strong>KES 842K</strong><small className="positive">+18.9% vs July</small></div></div></div><section className="panel table-panel"><div className="panel-header"><div><p className="eyebrow">RECENT ACTIVITY</p><h3>Invoices</h3></div><button className="text-button">Export →</button></div><div className="table-wrap"><table><thead><tr><th>Invoice</th><th>Patient</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead><tbody>{billing.map((item) => <tr key={item.invoice}><td><b>{item.invoice}</b></td><td>{item.patient}</td><td>{item.amount}</td><td><StatusBadge tone={item.status === 'Paid' ? 'success' : 'warning'}>{item.status}</StatusBadge></td><td>{item.date}</td></tr>)}</tbody></table></div></section></div> }

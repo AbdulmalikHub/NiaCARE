@@ -1,0 +1,8 @@
+'use client'
+
+import { useMemo, useState } from 'react'
+import Image from 'next/image'
+import { appointments, billing, formatRole, getInitials, metrics, navItems, pageTitle, patients, reports, roleLabels, storeUser, type NiaRole, type NiaUser } from '../../lib/nia/data'
+import { StatusBadge } from './status-badge'
+
+export function PatientProfile({ patientId, onBack }: { patientId: string; onBack: () => void }) { const patient = patients.find((item) => item.id === patientId) ?? patients[0]; return <div className="page-content"><button className="back-link" onClick={onBack}>← Back to patients</button><div className="profile-hero"><span className="profile-avatar">{getInitials(patient.name)}</span><div><p className="eyebrow">PATIENT PROFILE · {patient.id}</p><h1>{patient.name}</h1><p className="muted">{patient.age} years · {patient.phone}</p></div><StatusBadge>{patient.status}</StatusBadge></div><div className="profile-grid"><section className="panel"><div className="panel-header"><div><p className="eyebrow">CARE JOURNEY</p><h3>Recent activity</h3></div><button className="text-button">Add note</button></div><div className="timeline"><div><b>Routine review completed</b><span>Aug 08, 2026 · Dr. Amani</span></div><div><b>Treatment plan updated</b><span>Jul 22, 2026 · Front office</span></div><div><b>Patient registered</b><span>Jun 14, 2026 · Nia Dental Centre</span></div></div></section><section className="panel"><p className="eyebrow">NEXT APPOINTMENT</p><h3>{patient.nextVisit}</h3><p className="muted">Follow-up review · 45 minutes</p><button className="primary-button full-button">Manage appointment</button></section></div></div> }
