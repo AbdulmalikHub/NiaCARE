@@ -317,7 +317,10 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   border-radius:var(--radius-lg);
   box-shadow:var(--shadow-sm);
 }
-.card-pad{ padding:20px 22px; }
+  .card-pad{ padding:20px 22px; }
+  .facility-profile-details{ display:flex; flex-direction:column; gap:16px; }
+  .facility-detail-row{ display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:13px; color:var(--nia-secondary); }
+  .facility-detail-row strong{ color:var(--nia-ink); font-size:13px; font-weight:600; text-align:right; }
 .card-header{
   display:flex; align-items:center; justify-content:space-between;
   padding:18px 22px; border-bottom:1px solid var(--nia-line);
