@@ -348,8 +348,11 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-branches-card .card-pad{ padding:18px 22px 22px; }
   .facility-branches-card #branch-list{ margin-top:0; }
   .facility-branches-card #branch-list > .flex-between{ padding:18px 0 !important; align-items:flex-start; gap:10px; }
-  .facility-branches-card #branch-list strong{ display:block; max-width:130px; line-height:1.35; }
-  .facility-branches-card #branch-list small{ line-height:1.45; }
+.facility-branches-card #branch-list .branch-row{ align-items:center; gap:12px; }
+ .facility-branches-card #branch-list .branch-name{ min-width:0; flex:1; }
+ .facility-branches-card #branch-list strong{ display:block; max-width:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.2; font-size:13px; font-weight:500; }
+ .facility-branches-card #branch-list .badge{ flex:0 0 auto; }
+ .facility-branches-card #branch-list .btn{ flex:0 0 auto; white-space:nowrap; }
   .facility-add-branch{ width:100%; display:flex; align-items:center; justify-content:space-between; padding:10px 16px; border-radius:9px; }
   .facility-add-branch strong{ font-size:21px; line-height:1; font-weight:400; }
   .facility-profile-header + .card-pad{ padding:24px 22px 20px; }
