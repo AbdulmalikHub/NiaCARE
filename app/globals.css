@@ -323,6 +323,9 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-profile-icon{ display:grid; place-items:center; width:40px; height:40px; border-radius:12px; color:#5b2a92; background:#eee6fb; font-size:22px; }
   .facility-profile-heading h3{ margin-top:2px; font-size:17px; color:var(--nia-ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .facility-profile-details{ display:flex; flex-direction:column; gap:15px; }
+  .facility-profile-columns{ display:grid; grid-template-columns:1fr 1fr; gap:44px; padding:4px 0 24px; }
+  .facility-column-title{ color:var(--nia-ink-soft); font-size:12px; margin-bottom:18px; }
+  .facility-profile-columns .facility-detail-row{ min-height:32px; }
   .facility-detail-row{ display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:12px; color:var(--nia-ink-soft); }
   .facility-detail-row strong{ color:var(--nia-ink); font-size:13px; font-weight:600; text-align:right; overflow-wrap:anywhere; }
   .facility-detail-divider{ height:1px; background:var(--nia-border); margin:3px 0; }
@@ -330,7 +333,20 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-metric-grid > div{ padding:12px; border:1px solid var(--nia-border); border-radius:10px; background:#fcfbff; }
   .facility-metric-grid span{ display:block; color:var(--nia-ink-soft); font-size:11px; margin-bottom:5px; }
   .facility-metric-grid strong{ color:var(--nia-ink); font-size:16px; font-weight:700; }
-  @media(max-width:700px){ .facility-profile-header{ align-items:flex-start; flex-direction:column; } .facility-metric-grid{ grid-template-columns:1fr; } }
+  .facility-profile-header{ border-radius:14px 14px 0 0; }
+  .facility-branches-card{ overflow:hidden; }
+  .facility-branches-card .card-header{ min-height:96px; align-items:flex-start; }
+  .facility-branches-card .card-pad{ padding:18px 22px 22px; }
+  .facility-branches-card #branch-list{ margin-top:0; }
+  .facility-branches-card #branch-list > .flex-between{ padding:18px 0 !important; align-items:flex-start; gap:10px; }
+  .facility-branches-card #branch-list strong{ display:block; max-width:130px; line-height:1.35; }
+  .facility-branches-card #branch-list small{ line-height:1.45; }
+  .facility-add-branch{ width:100%; display:flex; align-items:center; justify-content:space-between; padding:10px 16px; border-radius:9px; }
+  .facility-add-branch strong{ font-size:21px; line-height:1; font-weight:400; }
+  .facility-profile-header + .card-pad{ padding:24px 22px 20px; }
+  .facility-profile-header + .card-pad .facility-metric-grid{ border-top:1px solid var(--nia-border); padding-top:18px; }
+  @media(max-width:900px){ .facility-profile-columns{ gap:22px; } }
+  @media(max-width:700px){ .facility-profile-header{ align-items:flex-start; flex-direction:column; } .facility-profile-columns{ grid-template-columns:1fr; gap:20px; } .facility-metric-grid{ grid-template-columns:1fr; } }
 .card-header{
   display:flex; align-items:center; justify-content:space-between;
   padding:18px 22px; border-bottom:1px solid var(--nia-line);
