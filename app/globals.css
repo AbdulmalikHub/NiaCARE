@@ -354,6 +354,25 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-profile-header + .card-pad{ padding:24px 22px 20px; }
   .facility-edit-actions{ display:flex; gap:10px; margin-top:24px; }
   .danger-warning{ max-width:620px; margin:0 0 16px; color:#8a2f3b; font-size:12.5px; line-height:1.55; }
+  .facility-delete-modal{ position:relative; overflow:hidden; max-width:500px; border:1px solid #efcfd4; }
+  .facility-delete-modal .modal-header{ padding:26px 28px 18px; border-bottom:0; }
+  .facility-delete-modal .modal-header h3{ margin-top:4px; color:#3d1d27; }
+  .facility-delete-modal .modal-body{ padding:0 28px 22px; }
+  .facility-delete-modal .modal-footer{ padding:16px 28px 22px; background:#fffafa; border-top:1px solid #f2dfe2; }
+  .facility-delete-icon{ position:absolute; top:24px; left:28px; display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:#fdebed; color:#a93648; font-weight:800; font-size:20px; }
+  .facility-delete-modal .modal-header > div{ padding-left:50px; }
+  .danger-eyebrow{ color:#a93648; letter-spacing:.14em; }
+  .facility-delete-warning{ padding:13px 14px; border:1px solid #f1cbd1; border-radius:9px; background:#fff4f5; color:#7d3440; font-size:12px; line-height:1.55; }
+  .facility-delete-warning strong{ display:block; margin-bottom:3px; color:#922b3d; }
+  .facility-delete-warning p{ margin:0; }
+  .delete-consent{ display:flex; align-items:flex-start; gap:9px; margin:18px 0; color:#4f4653; font-size:12px; line-height:1.45; cursor:pointer; }
+  .delete-consent input{ margin-top:2px; accent-color:#a93648; }
+  .facility-delete-modal .form-field label{ color:#4f4653; }
+  .facility-delete-modal .form-field input:focus{ border-color:#c85b6c; box-shadow:0 0 0 3px rgba(200,91,108,.12); }
+  .delete-error{ min-height:18px; margin:8px 0 0; color:#a93648; font-size:12px; }
+  .facility-delete-modal .btn-danger{ background:#a93648; color:#fff; }
+  .facility-delete-modal .btn-danger:hover{ background:#892b3b; }
+  .facility-delete-modal .btn-danger:disabled{ background:#e5b9c0; color:#fff; }
   .facility-edit-actions .btn{ margin-top:0; }
   .facility-profile-header + .card-pad .facility-metric-grid{ border-top:1px solid var(--nia-border); padding-top:18px; }
   @media(max-width:900px){ .facility-profile-columns{ gap:22px; } }
