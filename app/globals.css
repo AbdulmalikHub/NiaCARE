@@ -353,6 +353,7 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-add-branch strong{ font-size:21px; line-height:1; font-weight:400; }
   .facility-profile-header + .card-pad{ padding:24px 22px 20px; }
   .facility-edit-actions{ display:flex; gap:10px; margin-top:24px; }
+  .danger-warning{ max-width:620px; margin:0 0 16px; color:#8a2f3b; font-size:12.5px; line-height:1.55; }
   .facility-edit-actions .btn{ margin-top:0; }
   .facility-profile-header + .card-pad .facility-metric-grid{ border-top:1px solid var(--nia-border); padding-top:18px; }
   @media(max-width:900px){ .facility-profile-columns{ gap:22px; } }
