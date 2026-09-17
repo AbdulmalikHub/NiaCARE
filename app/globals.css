@@ -318,10 +318,19 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   box-shadow:var(--shadow-sm);
 }
   .card-pad{ padding:20px 22px; }
-  .facility-profile-details{ display:flex; flex-direction:column; gap:16px; }
-  .facility-detail-row{ display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:13px; color:var(--nia-secondary); }
+  .facility-profile-header{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 22px; background:linear-gradient(135deg, #fbf9ff 0%, #fff 72%); border-bottom:1px solid var(--nia-line); }
+  .facility-profile-heading{ display:flex; align-items:center; gap:12px; min-width:0; }
+  .facility-profile-icon{ display:grid; place-items:center; width:40px; height:40px; border-radius:12px; color:#5b2a92; background:#eee6fb; font-size:22px; }
+  .facility-profile-heading h3{ margin-top:2px; font-size:17px; color:var(--nia-ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .facility-profile-details{ display:flex; flex-direction:column; gap:15px; }
+  .facility-detail-row{ display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:12px; color:var(--nia-ink-soft); }
   .facility-detail-row strong{ color:var(--nia-ink); font-size:13px; font-weight:600; text-align:right; overflow-wrap:anywhere; }
-  .facility-detail-divider{ height:1px; background:var(--nia-border); margin:2px 0; }
+  .facility-detail-divider{ height:1px; background:var(--nia-border); margin:3px 0; }
+  .facility-metric-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .facility-metric-grid > div{ padding:12px; border:1px solid var(--nia-border); border-radius:10px; background:#fcfbff; }
+  .facility-metric-grid span{ display:block; color:var(--nia-ink-soft); font-size:11px; margin-bottom:5px; }
+  .facility-metric-grid strong{ color:var(--nia-ink); font-size:16px; font-weight:700; }
+  @media(max-width:700px){ .facility-profile-header{ align-items:flex-start; flex-direction:column; } .facility-metric-grid{ grid-template-columns:1fr; } }
 .card-header{
   display:flex; align-items:center; justify-content:space-between;
   padding:18px 22px; border-bottom:1px solid var(--nia-line);
