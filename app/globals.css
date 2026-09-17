@@ -352,6 +352,8 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-add-branch{ width:100%; display:flex; align-items:center; justify-content:space-between; padding:10px 16px; border-radius:9px; }
   .facility-add-branch strong{ font-size:21px; line-height:1; font-weight:400; }
   .facility-profile-header + .card-pad{ padding:24px 22px 20px; }
+  .facility-edit-actions{ display:flex; gap:10px; margin-top:24px; }
+  .facility-edit-actions .btn{ margin-top:0; }
   .facility-profile-header + .card-pad .facility-metric-grid{ border-top:1px solid var(--nia-border); padding-top:18px; }
   @media(max-width:900px){ .facility-profile-columns{ gap:22px; } }
   @media(max-width:700px){ .facility-profile-header{ align-items:flex-start; flex-direction:column; } .facility-profile-columns{ grid-template-columns:1fr; gap:20px; } .facility-metric-grid{ grid-template-columns:1fr; } }
