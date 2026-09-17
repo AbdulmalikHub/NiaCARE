@@ -330,9 +330,13 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-detail-row strong{ color:var(--nia-ink); font-size:13px; font-weight:600; text-align:right; overflow-wrap:anywhere; }
   .facility-detail-divider{ height:1px; background:var(--nia-border); margin:3px 0; }
   .facility-metric-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
-  .facility-metric-grid > div{ padding:12px; border:1px solid var(--nia-border); border-radius:10px; background:#fcfbff; }
-  .facility-metric-grid span{ display:block; color:var(--nia-ink-soft); font-size:11px; margin-bottom:5px; }
-  .facility-metric-grid strong{ color:var(--nia-ink); font-size:16px; font-weight:700; }
+  .facility-metric-grid > div{ min-height:58px; padding:8px 10px; border:1px solid #e2dfe7; border-radius:6px; background:#fff; box-shadow:0 2px 5px rgba(36,23,50,.08); }
+  .facility-metric-grid span{ display:flex; align-items:center; gap:5px; color:#706879; font-size:10px; margin-bottom:4px; }
+  .facility-metric-grid strong{ display:block; color:#22202a; font-size:13px; line-height:1; font-weight:700; }
+  .facility-metric-icon{ display:inline-flex; color:#4b126f; width:13px; height:13px; }
+  .facility-metric-icon svg{ width:13px; height:13px; }
+  .facility-profile-columns .badge-success{ background:#e9e7ee !important; color:#3f3a48 !important; border:0; font-size:10px; font-weight:500; padding:3px 7px; text-transform:uppercase; }
+  .facility-branches-card .badge-success{ background:#e7f4ec; color:#316947; border:1px solid #a9d6b9; font-size:10px; font-weight:500; padding:3px 8px; }
   .facility-profile-header{ border-radius:14px 14px 0 0; padding:26px 22px 22px; }
   .facility-profile-header .btn-ghost{ background:#4b126f; color:#fff; border-color:#4b126f; box-shadow:0 2px 5px rgba(75,18,111,.18); }
   .facility-profile-header .btn-ghost:hover{ background:#35104f; }
