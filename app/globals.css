@@ -337,6 +337,13 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-metric-icon svg{ width:13px; height:13px; }
   .facility-profile-columns .badge-success{ background:#e9e7ee !important; color:#3f3a48 !important; border:0; font-size:10px; font-weight:500; padding:3px 7px; text-transform:uppercase; }
   .facility-branches-card .badge-success{ background:#e7f4ec; color:#316947; border:1px solid #a9d6b9; font-size:10px; font-weight:500; padding:3px 8px; }
+  .facility-branches-card .badge-inactive{ background:#fde8eb; color:#a93648; border:1px solid #e7aab4; font-size:10px; font-weight:500; padding:3px 8px; }
+  .facility-inactive{ border-color:#e7aab4 !important; box-shadow:0 2px 12px rgba(169,54,72,.12); }
+  .facility-inactive .facility-profile-header, .facility-inactive .card-header{ background:linear-gradient(135deg,#fff5f6 0%,#fff 72%); border-bottom-color:#f0c8ce; }
+  .facility-inactive .facility-profile-icon{ color:#a93648; background:#fde8eb; }
+  .facility-inactive .facility-profile-heading .eyebrow, .facility-inactive .facility-profile-brand{ color:#a93648; }
+  .facility-inactive .facility-detail-row strong{ color:#8f293b; }
+  .facility-inactive .facility-metric-grid > div{ border-color:#e7aab4; background:#fff8f8; }
   .facility-profile-header{ border-radius:14px 14px 0 0; padding:26px 22px 22px; }
   .facility-profile-header .btn-ghost{ background:#4b126f; color:#fff; border-color:#4b126f; box-shadow:0 2px 5px rgba(75,18,111,.18); }
   .facility-profile-header .btn-ghost:hover{ background:#35104f; }
