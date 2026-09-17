@@ -353,6 +353,10 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
   .facility-add-branch strong{ font-size:21px; line-height:1; font-weight:400; }
   .facility-profile-header + .card-pad{ padding:24px 22px 20px; }
   .facility-edit-actions{ display:flex; gap:10px; margin-top:24px; }
+  .facility-name-input{ display:flex; align-items:center; min-height:40px; border:1px solid var(--nia-border); border-radius:8px; overflow:hidden; background:#fff; }
+  .facility-name-input > span{ align-self:stretch; display:flex; align-items:center; padding:0 10px; background:#f5f1fa; color:#5b2a92; font-size:13px; font-weight:600; white-space:nowrap; border-right:1px solid var(--nia-border); }
+  .facility-name-input input{ min-width:0; flex:1; border:0; border-radius:0; }
+  .facility-name-input input:focus{ outline:0; box-shadow:none; }
   .danger-warning{ max-width:620px; margin:0 0 16px; color:#8a2f3b; font-size:12.5px; line-height:1.55; }
   .facility-delete-modal{ position:relative; overflow:hidden; max-width:500px; border:1px solid #efcfd4; }
   .facility-delete-modal .modal-header{ padding:26px 28px 18px; border-bottom:0; }
