@@ -2,13 +2,16 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 
 const primaryKeys: Record<string, string> = {
-  facilities: 'facility_id', facility_members: 'id', patients: 'patient_id', treatment_plans: 'treatment_plan_id', procedures: 'procedure_id', appointments: 'appointment_id', follow_ups: 'follow_up_id', braces_cases: 'case_id', root_canal_cases: 'case_id', subscriptions: 'subscription_id', payments: 'payment_id', staff_invitations: 'id', audit_logs: 'id',
+  facilities: 'id', facility_members: 'id', patients: 'id', treatment_plans: 'id', procedures: 'id', appointments: 'id', follow_ups: 'id', braces_cases: 'id', root_canal_cases: 'id', subscriptions: 'id', payments: 'id', staff_invitations: 'id', audit_logs: 'id', operational_events: 'id', operation_tasks: 'id', operation_notifications: 'id', follow_up_records: 'id', recall_records: 'id', complaints: 'id', safety_incidents: 'id', ipc_audits: 'id', ipc_audit_items: 'id', corrective_actions: 'id', notification_rules: 'id', management_actions: 'id', practice_insights: 'id',
 }
 
 const allowedTables = new Set([
   'facilities', 'facility_members', 'patients', 'treatment_plans', 'procedures',
   'appointments', 'follow_ups', 'braces_cases', 'root_canal_cases',
   'subscriptions', 'payments', 'staff_invitations', 'audit_logs',
+  'operational_events', 'operation_tasks', 'operation_notifications', 'follow_up_records',
+  'recall_records', 'complaints', 'safety_incidents', 'ipc_audits', 'ipc_audit_items',
+  'corrective_actions', 'notification_rules', 'management_actions', 'practice_insights',
 ])
 
 function client(request: NextRequest) {
